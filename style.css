@@ -1,0 +1,260 @@
+html{
+  --header:56px;
+  --sidebar:240px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header{
+  width: 100%;
+  height: var(--header);
+  border: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+
+}
+.left{
+  width: 20%;
+  height: 56px;
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-inline: 20px;
+  gap: 16px;
+}
+.youtube{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left i{
+  font-size: 25px;
+  /* border: 1px solid; */
+  color: black;
+  
+}
+.mid{
+  width: 80%;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid; */
+  
+}
+.youtube p{
+  font-size: 20px;
+}
+.youtube i{
+  color: red;
+  font-size: 30px;
+}
+.youtube sup{
+  font-size: 10px;
+}
+.search{
+  width: 50%;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.pos{
+  width: 600px;
+  height: 30px;
+}
+input[type="text"]{
+  width: 100%;
+  height: 30px;
+  margin-left: 20px;
+  /* border-radius: 20px 0 0 20px; */
+  border: none;
+  flex-shrink: 1;
+  
+}
+.search i{
+  font-size: 20px;
+  width: 60px;
+  height: 40px;
+  background-color: rgba(192, 192, 192, 0.368);
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.mid .mic{
+  font-size: 20px;
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(192, 192, 192, 0.368);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right{
+  width: 20%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  
+  /* border: 1px solid; */
+}
+
+
+.right >div{
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(192, 192, 192, 0.368);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* margin-left: 20px; */
+}
+.notification{
+  position: relative;
+}
+.notification p{
+  position: absolute;
+  top: 0;
+  right: -5px;
+  
+  width: 25px;
+  height: 20px;
+  background-color: red;
+  border-radius: 8px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+
+/* Main */
+main{
+  display: flex;
+  min-height: calc(100vh - 56px)
+}
+.side-bar{
+  /* border: 1px solid blue; */
+  width: var(--sidebar);
+  display: flex;
+  flex-direction: column;
+}
+
+.content{
+  /* border: 1px solid red; */
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: var(--sidebar);
+  padding: 20px;
+}
+
+/* side-bar */
+
+.box1{
+  padding-inline: 20px;
+}
+
+
+.box1 .item{
+  padding: 5px;
+  width: 204px;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  /* border: 1px solid; */
+  
+}
+.box2{
+  width: 216px;
+  height: 292px;
+  padding-top: 12px;
+  margin-top: 12px;
+  /* border-top: 1px solid; */
+  justify-content: center;
+  padding-inline: 20px;
+  
+}
+.box2 .item{
+  padding: 5px;
+  width: 204px;
+  height: 40px;
+  
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  /* border: 1px solid; */
+}
+.item .icon{
+  width: 24px;
+  height: 24px;
+  border: 1px solid;
+}
+.youyou{
+  padding: 0 5;
+  
+
+}
+.content .contentline{
+  padding: 20px;
+  width: 100%;
+  /* height: 317px; */
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  border: 1px solid;
+  flex-wrap: wrap;
+  
+}
+.contentbox{
+  width: 333px;
+  height: 275px;
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+}
+.content img{
+  width: 100%;
+}
+.content .textprofile{
+  width: 333px;
+  height: 50px;
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.channal{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.channal img{
+  border-radius: 50%;
+}
